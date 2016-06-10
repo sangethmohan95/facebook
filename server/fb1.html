@@ -1,0 +1,506 @@
+<html>
+<head>
+    
+
+
+ <!--  <link rel="stylesheet" type="text/css" href="file:///G:/asg/san.css"> -->
+     <title>FACEBOOK 
+     </title>
+     <style>
+    body{
+        height: 1000px;
+
+
+        background:linear-gradient( to bottom right,white,#bcbdc4);
+        ;}                  
+    
+   div.img{
+         margin-left:150px;
+         margin-top:40px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+  background-position:100px;
+          position:left;}
+
+         
+        
+    div.hd1{
+      text-align:30%;
+      top:0;
+      left:0;
+
+    background-color:#45619D;
+    border-bottom: 3px solid #0053A6;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.52);*/
+     position: fixed;
+      min-width: 1000px;
+
+      width: 100%;
+
+      z-index: 1000;
+
+    font-family:verdana;
+    width:100%;
+    height:90px;
+  
+
+      }
+
+    #c3{
+
+      margin-left:730px; 
+      margin-top:-40px;    
+
+    }    
+    #c4{
+      margin-left:730px; 
+      margin-top:-28px;    
+    }   
+    #c5{
+         margin-left: 730px;
+         margin-top: -60px;
+    }
+
+    #c1{margin-left:730px;
+        margin-top:-300px;
+        
+
+       }
+    
+    #c2{margin-left:150px;
+        margin-bottom:40px;
+        margin-bottom: 50px;
+        }     
+    #btn1{
+                  background-color:#627aac; 
+                  border-top: 1px solid #29447e;
+                  border-right: 1px solid #29447e;
+                  border-bottom: 1px solid #1a356e;
+                  border-left: none;
+                  height: 22px;
+                  padding-right: 15px;
+                  padding-left: 15px;
+                  font-weight: bold;
+                  font-size: 11px;
+                  color: white;
+                  text-decoration: none;
+                  font-family: verdana;
+                  line-height: 22px;
+                  cursor: pointer;
+    }
+
+
+
+     </style>
+
+     <script type="text/javascript">
+      function valid()
+      {
+
+  var n1=document.getElementById("t1").value;
+  var n2=document.getElementById("t2").value;
+   n3=document.getElementsByName("num")[0].value;
+   n4=document.getElementsByName("num2")[0].value;
+  var n5=document.getElementById("t5").value;
+  var sel=document.getElementById("sl").value;
+  var sel2=document.getElementById("s2").value;
+  var sel3=document.getElementById("s3").value;
+var gdr=document.getElementById("r1");
+var gdr2=document.getElementById("r2");
+  
+    var  er1=document.getElementsByName("num")[0].value;
+     var er2=document.getElementsByName("num2")[0].value;
+  
+      var em1=n3.split("@");
+         x=em1.length;
+    
+     var  em2=em1[x-1].split(".");
+          z=em2.length;
+     
+        var alpha=/^[a-zA-B0-9]+$/;
+
+        e1=document.getElementById("t3");
+
+
+  if (n1=="") 
+  {
+    document.getElementById("l1").innerHTML="enter ur name";
+  }
+
+
+ if (n2=="")
+{
+
+  document.getElementById("l2").innerHTML="enter surnname";
+}
+
+
+
+
+
+
+  if(n3=="")
+        {
+                   document.getElementById("l3").innerHTML="enter ur emailid";
+        }
+         if(em1.length==1 || em2.length==1 || em1[x-1].length<=2 || em2[z-1].length<=2)
+        { 
+             document.getElementById("l3").innerHTML="invalid email id";
+        }
+             for(i=0,j=0;i<(em1.length)-1 || j<(em2.length)-1;i++,j++) 
+             {
+                 if(!alpha.test(em1[i]) || (!alpha.test(em2[j])))
+                  {
+                    document.getElementById("l3").innerHTML="invalid email id";
+                  } 
+             }   
+
+       
+      if(n4=="") 
+      {
+         document.getElementById("l4").innerHTML="RE-enter ur mail id"; 
+      }
+       if(!n3.match(n4)) 
+      {
+          document.getElementById("l4").innerHTML=" E-mail id dint match";
+      }
+
+
+
+
+/*if   (n3=="") {
+
+
+  document.getElementById("l3").innerHTML="enter email id or mob no";
+}
+
+         if(e1.length==1 || e2.length==1 || e1[x-1].length<=2 || e2[z-1].length<=2)
+        { 
+             document.getElementById("l3").innerHTML="invalid email id";
+        }
+             for(i=0,j=0;i<(e1.length)-1 || j<(e2.length)-1;i++,j++) 
+             {
+                 if(!alpha.test(e1[i]) || (!alpha.test(e2[j])))
+                  {
+                    document.getElementById("l3").innerHTML="invalid email id";
+                  } 
+             }  
+
+
+
+
+
+
+  
+
+
+   if (n4=="") {
+
+    document.getElementById("l4").innerHTML="re-enter ur mobileno/email";
+
+
+   }
+
+
+ else if(!er1.match(er2))
+  {
+    document.getElementById("l4").innerHTML="emails don't match";
+  }
+*/
+   if (n5=="") {
+
+   document.getElementById("l5").innerHTML="enter ur password";
+
+
+   }
+
+  else if (n5.length<8 )
+    {
+
+
+      document.getElementById("l5").innerHTML="pwd should hav atlest 8 charracter";
+    }   
+
+
+
+
+
+
+       
+       if (sel=="day")
+ {
+
+  document.getElementById("l6").innerHTML=" choose ur Dob";
+ }
+
+
+    if (sel2=="month") 
+    {
+
+
+     document.getElementById("l7").innerHTML="choose month"
+
+    }
+     
+      if (sel3=="year") 
+
+        { document.getElementById("l8").innerHTML="choose year"}
+
+
+
+
+
+      if((gdr.checked==false) && (gdr2.checked==false))
+{
+      document.getElementById("l9").innerHTML="*Select Gender";
+
+}
+
+    
+
+
+      }
+
+
+
+
+
+
+
+     </script>
+     </head>
+             <body>
+             <form name="login" method="POST" action="login.php">
+                <div class="hd1">
+                <font color="white" size="6px"  ><b> 
+                         facebook</font>
+  <table>  
+            <tr>
+                <td>
+            <div id="c5">
+          <font size="2mm" color="white" ;>
+           email  or phone &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; password</td>
+           </div> 
+
+
+          </tr>
+
+                             
+         <tr>
+            <td>
+           <div id="c3">
+
+      <form name="login" method="post" action="login.php">
+
+            <input type="text" name="usrname" placeholder="username" >&nbsp; &nbsp; &nbsp; 
+            <input type="password" name="password" placeholder="password">
+            <input type="submit"value="login" id="btn1"> 
+             </form>       
+           </div>
+           </td>  </tr>
+           <br>
+           <br>
+           </td>
+            <td>
+            
+            
+          
+          <tr>
+            
+
+           <td> 
+
+            <div id="c4"> <input type="checkbox" >
+           <font size="2mm" color="white"> keep me logged in &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;            </font> 
+        <font size="2mm" color="white">
+       <fontcolor="white">  forget password?     </a></font>
+        
+        </td>
+          
+           </div>
+          </tr>
+          </div>  
+   </table>
+                
+   </div>
+         <br>
+ 
+           <div id="c2">
+            <font size="5px" color=#45619D ><b> Facebook helps you to connect and share with the <br>people in your life</b></font>
+              </div>
+     <div class="img">
+             
+             <img src="fb1.png">
+
+             </div></td></tr>          
+
+         </div>
+</table>  
+
+             <div id="c1">
+              <form name="signup" method="POST" action="fb.php">
+             
+             <table>
+              <tr>
+               <font size="6px">    Create an account
+               </font> <br>
+                 It's free and always will be
+              </tr>     
+<tr>
+               <td> 
+
+                           <label id="l1" style= "color:red;" size="1mm">  </label>  <br>
+
+                   <input type="text" name="firstname" id="t1" placeholder="firstname:"size="17.5" style="height:30px;" >               &nbsp; &nbsp; 
+            </label> 
+
+                   <input type="text" name="srname" id="t2" placeholder="surname"  size="16"style="height:30px; "> <label id="l2" style= "color:red;" size="1mm">  </label>   </td>  <br> <br>
+     </tr>
+        
+     <tr>
+             <div id="left">
+              <td> <input type="text" name="num"  id="t3" placeholder="enter mobileno or rmail id"  size="40" style="height:30px;">   <br>  <label id="l3" style= "color:red;">  </label> </td>  <br> <br> </td>
+      </tr>
+
+      <tr>
+             
+              <td> <input type="text" name="num2" id="t4" placeholder="re-enter e-mail or mobile number" size="40" style="height:30px;">  <br> <label id="l4" style= "color:red;">  </label>   <br> <br> </td>
+      </tr>
+ 
+     <tr>
+             
+              <td> <input type="password"  id="t5" name="pwd" placeholder="password "size="40"  style="height:30px;">   
+            
+                  <br>
+               <label id="l5" style= "color:red;">  </label>   
+
+              <br> <br> </td>
+     </tr> 
+      <tr>
+            <td>   <font size="2mm">BirthDay</font>  </td>
+       </tr>  
+
+        <tr>
+		          <td> <select  id="sl" name="s1">
+            <option value="">day</option>
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				    <option value="4">4</option>
+				    <option value="5">5</option>
+			</select>  <label id="l6" style= "color:red;" >  </label>   
+			  
+ 
+		          <select id="s2"  name="s2">
+				  <option value="">month</option>
+				    <option value="jan">jan</option>
+				    <option value="feb">feb</option>
+				    <option value="maar">mar</option>
+				    <option value="apr">apr</option>
+				    <option value="may">may</option>
+			</select>   <label id="l7" style= "color:red;">  </label>   
+   			
+
+           
+		          	<select id="s3" name="s3">
+				  <option>year</option>
+				    <option value="1995">1995</option>
+				    <option value="1994">1994</option>
+				    <option value="1993">1993</option>
+				    <option value="1992">1992</option>
+				    <option value="1991">1991</option>
+			</select>   <label id="l8" style= "color:red;">  </label>   
+
+      <font size="1mm" color="#45619D ">
+      why do i need  to provide my<br>  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp; date of birth?
+      <br> <br>
+
+
+						</td>
+
+			</tr>
+						
+<tr>
+			       
+			       <td> 
+			       <input type= "radio" name="ro1" id="r1" value="female"  size="20"> 
+			        female
+                   <input type ="radio"  name="ro1" id="r2" value="male" size="20">
+                   male    <label id="l9" style= "color:red;">
+                   <br> <br> </td>
+			</tr>
+
+      <tr>
+
+
+
+      <td>
+      <font size="1mm" color="#45619D ">
+        By clicking Create an account, you agree to our Terms and that <br> you have read our Data Policy, including our Cookie Use.
+</td>
+</tr>
+
+<tr>
+			<td>
+      <br> <input type="submit" value="CREATE AN ACCOUNT" style="
+      margin-top24px; background-color:#77b55a;-moz-border-radius:4px;
+  -webkit-border-radius:4px;
+   height:30px;
+  border-radius:4px;
+  border:1px solid #4b8f29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:3mm;
+  font-weight:bold" onclick="valid();"> </td>
+    
+
+
+        </tr>
+ 
+
+        <tr>
+        <td>
+        <hr>
+        </td>
+
+      </tr>
+             <tr>
+
+                  <td>
+
+      <font size="2mm" color="#45619D ">
+
+Create a Page for a celebrity, band or business.</td>
+      </font> </tr>
+
+            </table>
+             </form>
+
+               </div>
+             </div>
+
+               <font size="2mm" color="#45619D ">
+             English (UK)தமிழ்తెలుగుಕನ್ನಡاردوहिन्दीമലയാളംසිංහලਪੰਜਾਬੀবাংলা… 
+             <hr>
+
+
+              
+             Sign Up  Log In  Messenger Facebook Lite Mobile  Find Friends  Badges  People  Pages Places <br>
+            Games Locations About Create Advert Create Page Developers  Careers Privacy Cookies AdChoices <br>
+                 <br>
+                  Facebook © 2016 
+                  <br>
+                  English (UK)
+
+
+  </font>
+
+</body>
+
+</html>
+
+
+
+

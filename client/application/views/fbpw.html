@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<?php $this->load->helper("url"); ?>
+
+
+  <title>facebook</title>
+  </head>
+<body>
+<?php foreach($user as $data){
+?>
+ <div class="container-fluid">
+ <div class="row">
+ <div class="col-md-12" style="background-color:#4867AA"> 
+  <div class="col-md-2 col-md-3">
+ <img style="class="img-responsive" src="<?php echo base_url().'images/fa.png'?>" width="350" height="100"> <br>
+
+  </div>
+<div class="col-md-offset-1 col-md-2">
+<br/>
+<br/>
+&nbsp;  &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<button class="btn btn-success btn-sm" type="submit">signup</button>
+</div>
+</div>
+</div>
+
+       <div class="row" style="background:linear-gradient( to bottom right,white,#bcbdc4)">
+       
+       <div class="col-md-offset-3  col-md-5" style="margin-top:100px;height:600px">
+       <form name="frm1" method="post" action="<?php echo base_url().'index.php/LoginController/sa';?>"  style="background-color:white; width=1250px;  height:310px ">
+<div class="col-md-offset-1 col-md-12">
+Facebook login
+<hr>
+
+</div>
+<div class="col-md-offset-1 col-md-10">
+<font size="2mm" color="#45619d">
+
+<label>
+login as 
+
+
+</label>
+</font>
+<label>
+ <img style="width:50px"class="img-responsive" src="<?php echo $data['vchr_prof_pic'];?>">
+
+
+</label>
+<label>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<?php echo  $data['f_name'];?></label>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+<label>
+<input type="hidden" class="form-control" name="email" value="<?php echo  $data['email_id'];?>">
+<?php echo  $data['email_id'];?>
+</label>
+</input>
+<div class="col-md-offset-4 col-md-10">
+<label>
+
+<a href="" style="color:#4867AA"> not u?</a>  
+</label>
+</div>
+</div>
+<div class="col-md-offset-1 col-md-10">
+<font size="2mm" color="#45619d">
+
+<label>
+password &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;
+
+</label>
+</font>
+<label>
+<input type="password" class="form-control" name="password" id="t2" size="16" style="height: 30px";>
+</label>
+</div>
+
+<div class="col-md-offset-2  col-md-12">
+<label>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+<input type="checkbox" class="form-group"> <label class="lab2"> Keep me logged in</label>
+
+
+</label>
+</div>
+
+
+ <div class="col-md-offset-2 col-md-12">
+<label>
+   &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp;
+
+<button class="btn btn-primary btn-sm" type="submit" >login</button>  
+
+</label>
+  <label>
+  
+<a href="" style="color:#4867AA">signup for facebook </a>
+</label>
+  </div>
+
+
+<div class="col-md-offset-2 col-md-12">
+<label>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<a href="" style="color:#4867AA">forget password? </a>
+
+    </label>
+    </form>
+</div>
+  
+
+</div>
+</div>
+
+<?php } ?>
+</body>
+</html>
