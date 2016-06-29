@@ -1,4 +1,4 @@
-<?php  
+2<?php  
 //defined('basepath')
 
 class LoginController extends CI_Controller
