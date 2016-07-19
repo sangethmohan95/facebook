@@ -3,12 +3,12 @@
 
 class LoginController extends CI_Controller
 {
-	public function sa()
- {
+	public function sa(){
 		$user['email']=$this->input->post("email");
 		$user['password']=$this->input->post("password");
 		//$url="http://api.baabtra.com/LoginService/login.php";
 		$url="http://localhost/login/index.php/LoginService/adduser";
+		//$url="http://13.76.209.156/login/index.php/LoginService.php";
 		$options =array(
 	           'http'=> array(
                'header' =>"Content-type: application/x-www-form-urlencoded\r\n",  
@@ -22,19 +22,14 @@ class LoginController extends CI_Controller
 		//print_r($result);
 		$data=json_decode($result,true);
 		$login['user']=$data;
-		$val=array();
-          foreach($data as $val)
-               {
+        foreach($data as $val)
         	    if($val['ResponseCode']==200)
         		$this->load->view("fbhp.html",$login);
              else if($val['ResponseCode']==500)
         		$this->load->view("fbpw.html",$login);
         	else if($val['ResponseCode']==404)
         		$this->load->view("fwe.html",$login);
-        }
-
-        	     
-   }
-}
+        	   //  print_r($data);
+}}
 
 ?>

@@ -1,21 +1,21 @@
 <html>
 <head>
 
-<!--  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
- -->
-<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 <!-- jQuery library -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> -->
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
 <!-- Latest compiled JavaScript -->
-<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
 
 <?php $this->load->helper("url"); ?>
+
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/css/style.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>/css/style.css">
- <title>faceebook</title>
+ --> <title>faceebook</title>
 </head>
 <body>
 
@@ -23,11 +23,17 @@
 <div class="row">
 <div class="col-md-12" style="background-color:#4867AA"> 
 <div class="col-md-1 col-md-3">
- <img style="class="img-responsive" src="<?php echo base_url().'images/fa.png'?>" width="350" height="100">
+ <img style="class="img-responsive"  src=<?php echo base_url()."images/fa.png"; ?> width="350" height="100">
+ <!-- <img style="class="img-responsive" src="http://13.76.209.146/fb/images/fa.png" width="350" height="100">
+ -->
 </div>
 <div class="col-md-offset-6 col-md-5">
 <div class="col-md-12">
-<form role="form" method="post" action="<?php echo base_url().'index.php/LoginController/sa';?>">
+  <!-- <form role="form" method="post" action="index.php/LoginController/sa"> -->
+ 
+ <form role="form" method="post" action='index.php/LoginController/sa'">
+
+
 <div class="col-md-5">  <br/>
 <label class="lab">email or phone</label> <br/>
 <input class="headinp" type="text" class="form-control" name="email" value="example@mail.com"> <br/>
@@ -53,11 +59,12 @@
 <div class="col-md-offset-1 col-md-6" style="margin-top:80px">
 <div class="col-md-12">
 <div class="col-md-offset-0 col-md-10">
-<font size="4px" color="#45619d"><b>
+<font size="4px" color="#45619d" class="font-responsive hidden-xs hidden-sm" ><b>
 Facebook helps you to connect and share with the<br> 
 people in your life </b></font>
 </div>
-<img src="<?php echo base_url().'images/sdd.png'?>" width="450" height="150">
+<img src="images/sdd.png" class="image-responsive hidden-xs hidden-sm" width="450" height="150"> 
+<!-- <img src="http://13.76.209.146/fb/images/sdd.png" class="image-responsive hidden-xs hidden-sm" width="450" height="150"> -->
 
 </div>
 </div>
@@ -65,31 +72,32 @@ people in your life </b></font>
 <h1> Create an account </h1>
 <div style="margin-left:11px">
 <h4>it's free and always will be </h4> </div>
-
-<form role="form" method="post" action="<?php echo base_url().'index.php/Signup/Ls';?>">
+<form role="form" method="post" action="index.php/Signup/ls">
+<!-- <form role="form" method="post" action="<?php echo base_url().'index.php/Signup/Ls';?>">
+ -->
+ <label>
+<input type="text" class="form-control" name="fn" required="true"  placeholder="firstnane" id="t1" size="16" style="height:30px";> </label>
 <label>
-<input type="text" class="form-control" name="fn" placeholder="firstnane" id="t1" size="16" style="height:30px";> </label>
-<label>
-<input type="text" class="form-control" name="sn" placeholder="surname" id="t2" size="17.5" style="height:30px";> 
+<input type="text" class="form-control" name="sn" required="true" placeholder="surname" id="t2" size="17.5" style="height:30px";> 
 </label>
 <label>
-<input type="text" class="form-control" name="em" placeholder="enter email-id or mobile no" id="t3" size="40" style="margin-top:10px;height:30px";>  
+<input type="text" class="form-control" name="em"  required="true" placeholder="enter email-id or mobile no" id="t3" size="40" style="margin-top:10px;height:30px";>  
 <br/>	
 </label>
 <label>
-	<input type="text" name="em2" class="form-control" placeholder="re-enter email-id or mobile no" id="t4" size="40" style="height:30px";> <br/>
+	<input type="text" name="em2"  required="true"  class="form-control" placeholder="re-enter email-id or mobile no" id="t4" size="40" style="height:30px";> <br/>
 </label>
 <label>
 	
 
-<input type="password" name="pwd" class="form-control" placeholder="password" id="t5" size="40" style="height: 30px";></input> <br/>
+<input type="password" name="pwd" required="true" class="form-control" placeholder="password" id="t5" size="40" style="height: 30px";></input> <br/>
 </label>
 <div style="margin-left:15px">
 <p><font size="5px">Birthday</font></p>
 </div>
 <div style="margin-left:15px">
 <label>
-	<select class="form-control" id="dy" name="s1" style="width:70px">
+	<select class="form-control" id="dy" name="s1" required="true" style="width:70px">
 	<option  value="">day</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -126,7 +134,7 @@ people in your life </b></font>
 </select>
 </label>
 <label>
-       <select class="form-control" id="mnt" name="s2" style="width:70px">
+       <select class="form-control" id="mnt" name="s2" required="true" style="width:70px">
 <option  value="">month</option>
 <option  value="jan">jan</option>
 <option  value="feb">feb</option>
@@ -143,7 +151,7 @@ people in your life </b></font>
 </select>
 </label>
 <label>
-       <select class="form-control" id="yr" name="s3" style="width:70px">
+       <select class="form-control" id="yr" name="s3" required="true" style="width:70px">
 <option  value="">year</option>
 <option  value="2016">2016</option>
 <option  value="2015">2015</option>
@@ -163,6 +171,16 @@ people in your life </b></font>
 <option  value="2001">2001</option>
 <option  value="2000">2000</option>
 <option  value="1999">1999</option>
+<option  value="1998">1998</option>
+<option  value="1997">1997</option>
+<option  value="1996">1996</option>
+<option  value="1995">1995</option>
+<option  value="1994">1994</option>
+<option  value="1993">1993</option>
+<option  value="1992">1992</option>
+<option  value="1991">1991</option>
+<option  value="1990">1990</option>
+<option  value="1989">1989</option>
 </select>
 </label>
 </div>
@@ -173,12 +191,12 @@ date of birth
 </font></div><br>
 <div style="margin-left: 15px">
 <label>
-	<input  type="radio" name="rad" value="male" id="m" size="20"> male </label> &nbsp; &nbsp;
+	<input  type="radio" name="rad" value="male" required="true" id="m" size="20"> male </label> &nbsp; &nbsp;
 	<label>  
-	<input type="radio" name="rad"  value="female" id="f" size="20"> female 
+	<input type="radio" name="rad"  value="female"  id="f" size="20"> female 
 </label>
 <label>
-<input type="text" class="form-control" name="pic" placeholder="photo" id="t3" size="40" style="margin-top:10px;height:30px";>  
+<input type="text" class="form-control" name="pic" required="true" placeholder="photo" id="t3" size="40" style="margin-top:10px;height:30px";>  
 <br/>   
 </label>
 <div style="margin-left: 12px">
