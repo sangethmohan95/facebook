@@ -9,54 +9,83 @@
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<?php $this->load->helper("url"); ?>
-<link rel="shortcut icon" type="image/png" href="/la.ico"/>
+ <?php $this->load->helper("url"); ?>
+ 
+ <link rel="shortcut icon" type="image/png" href="/la.ico"/>
 
-	<title>facebook</title>
+  <title>facebook</title>
   </head>
 <body style="background-color:#bcbdc4">
-<?php foreach($user as $data){
+   
+   <?php foreach($user as $data){
 ?>
 
- <div class="container-fluid">
- <div class="row"style="background-color:#3b5998;height:80px">
-  <div class="col-md-12">
-  <div class="col-md-offset-1 col-md-1">
-   <img  src="<?php echo base_url().'images/fic.jpg';?>" class="img-rounded"  style="height:40px;margin-top:25px">
-  </div>
-  
-<div class=" col-md-6">
-
-<!-- <input type="text" class="input-medium search-query" placeholder="search">
- <button type="submit" class="add-on"><i class="icon-search"></i></button> -->
-
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12" style="background-color:#4867AA"> 
+<div class="col-md-1 col-md-1">
+ <img  src="<?php echo base_url().'images/fic.jpg';?>" class="img-rounded"   style="height:40px;margin-top:25px">
+ <!-- <img style="class="img-responsive" src="http://13.76.209.146/fb/images/fa.png" width="350" height="100">
+ -->
+</div>
+<div class="col-md-offset-1 col-md-5">
+<form>
 <input type="text"   placeholder="Search Facebook"   span class="
-glyphicon glyphicon-search" style=" width:320px;  height:30px;margin-top:20px;">
-
+glyphicon glyphicon-search" class="text-responsive hidden-xs hidden-sm" style="width:320px;height:30px; margin-top:20px;">
 <button type="submit" class="glyphicon glyphicon-search"></button>
-   
+</div>
+</form>
+<div class="col-md-5"> <br/>
+<button name="btn1" id="b1" style="overflow:hidden;position:relative;margin:10px;width10px;height10px;color:#4867AA; display:none;  onclick="" ">
+<!-- <a href="#">
+<i class="glyphicon glyphicon-user" style="font-size:12px;color:white"></i>
+
+</a>
+ --></button>  
+
+<img  src= <?php echo  $data['vchr_prof_pic'];?> class="img-rounded"  style="height:40px;margin-top:25px;">
+
+  
+</label>
+<label>
+<a href="#" style="color:white"> <?php echo  $data['f_name'];?></a>
+
+</label>
+<label>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 
+
+<a href="#" style="color:white"> <i class="glyphicon glyphicon-off"> </i> logout</a>
+
+</label>
+
+
+
+<br> &nbsp; &nbsp; &nbsp; &nbsp;
+
+</div>
+
+
+</div>
 </div>
 <label>
-	
-<img  src="<?php echo  $data['vchr_prof_pic'];?>" class="img-rounded"  style="height:40px;margin-top:25px">
+<img  src= <?php echo  $data['vchr_prof_pic'];?> class="img-rounded"  style="height:40px;margin-top:25px;">
 
-	
+  
 </label>
 <label>
-<a href="#"style="color:black"><?php echo  $data['f_name'];?></a>
+<a href="#" style="color:white"> <?php echo  $data['f_name'];?></a>
 
 </label>
-<label>
-&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	
-<a href="#"style="color:black"> logout </a>
-</label>
+
+
 
 </div>
 </div>
 
 <div class="row">
 <div class="col-md-12">
-<div class="col-md-offset-2 col-md-5" style="background-color: white;height:190px;margin-top:30px">
+
+<div class="col-md-offset-2 col-md-5" style="background-color: white;height:190px;margin-top:-30px">
 <label>
 <a href="#"style="color:#4867AA"> 
 <span class="glyphicon glyphicon-edit"></span> update status  </a>
@@ -74,19 +103,19 @@ glyphicon glyphicon-search" style=" width:320px;  height:30px;margin-top:20px;">
 </label>
  &nbsp; &nbsp; &nbsp;  &nbsp;
  <label>
-<input type="text" class="form-control" name="sn" placeholder="what's on ur mind?" id="t2" size="74.5px" style="height:90px";> 
+<input type="area" class="form-control" name="sn" placeholder="what's on ur mind?" id="t2" size="74.5px" style="height:90px";> 
 </label>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-<button class="btn btn-primary btn-sm" type="submit" onclick="">post</button>
+
+<button class="btn btn-primary btn-sm" type="submit" style="margin-left:490px" onclick="">post</button>
 
 </div>
-<div class="col-md-4" style="background-color:white;height:500px;margin-top:30px; margin-left:10px;  overflow:scroll">
-<form name="frm1" method="post" action="">
+<div class="col-md-4" style="background-color:white;height:500px;margin-top:-30px; margin-left:10px;  overflow:scroll">
+<form name="frm1" id="f2" method="post" action="">
 
 <label>   
 <font style="color:#4747d1">
 YOUR ADDS
-	
+  
 </font> 
 </label>
 

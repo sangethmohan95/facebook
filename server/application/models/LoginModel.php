@@ -11,7 +11,7 @@ class LoginModel extends CI_Model
        foreach ($query->result_array() as $row) 
     	 $user[]=$row;
        $user[0]['ResponseCode']="200";
-       //$this->load->view("fbhp.html",$user);
+       
       $user[0]['msg']="success";
 
       }
@@ -38,6 +38,15 @@ class LoginModel extends CI_Model
      
      }
      return $user;
-  }
+  
+    }
+     public function frnd()
+    {
+        $this->db->select('email','vchr_prof_pic');
+        $this->db->from('login');
+        $query=$this->db->get();
+    }
+
+
 }
 ?>

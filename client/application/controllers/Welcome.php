@@ -39,4 +39,11 @@ public  function fls()
 	$this->load->view('fbhp.html');
 }
 
+
+public function frn()
+{
+	$this->load->view('ffrnds.html');
+}
+
+
 }

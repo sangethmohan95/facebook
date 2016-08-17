@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<?php $this->load->helper("url"); ?>
+<link rel="shortcut icon" type="image/png" href="/la.ico"/>
+
+	<title>facebook</title>
+  </head>
+<body style="background-color:#bcbdc4">
+<?php foreach($user as $data){
+?>
+
+ <div class="container-fluid">
+ <div class="row"style="background-color:#3b5998;height:80px">
+  <div class="col-md-12">
+  <div class="col-md-offset-1 col-md-1">
+   <img  src="<?php echo base_url().'images/fic.jpg';?>" class="img-rounded"   style="height:40px;margin-top:25px">
+   <span class="social social-facebook"></span>
+  </div>
+  
+<div class=" col-md-6">
+<input type="search"   placeholder="Search Facebook"    class="
+glyphicon glyphicon-search"  style=" width:320px;  height:30px;margin-top:20px;">
+
+<button type="submit" class="glyphicon glyphicon-search"></button>
+   
+</div>
+<label>
+<a href="#" style="color:black">
+<span class="glyphicon glyphicon-user-add"></span>  </a>
+	
+<img  src="<?php echo  $data['vchr_prof_pic'];?>" class="img-rounded"  style="height:40px;margin-top:25px">
+
+	
+</label>
+<label>
+<a href="#"style="color:black"><?php echo  $data['f_name'];?></a>
+
+</label>
+<label>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	<!-- 
+<a href="#"style="color:black"  ><span class="glyphicon glyphicon-power"> </span> logout      </a> -->
+<a href="#"style="color:black"> <span class="glyphicon glyphicon-power"></span> logout</a>
+
+</label>
+
+</div>
+<label>
+<br> &nbsp; &nbsp; &nbsp; &nbsp;
+	
+<img  src="<?php echo  $data['vchr_prof_pic'];?>" class="img-rounded"  style="height:30px;margin-top:25px"> <!-- //side -->
+
+<a href="#"style="color:black"><?php echo  $data['f_name'];?></a>
+
+</label>
+<br>
+&nbsp;
+&nbsp;
+
+<a href="#" style="color:black">edit profile</a>
+
+
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<div class="col-md-offset-2 col-md-9">
+
+<div class="col-md-8" style="background-color:white;height:800px;margin-top:20px; margin-left:10px; " >
+<form name="frm1" method="post" action="">
+
+<label>   
+<font style="color:#4747d1">
+Friend request
+	
+</font> 
+</label>
+
+
+</div>
+</form>
+</div>
+</div>
+</div>
+
+<?php } ?>
+
+</body>
+</html>
+
+
+

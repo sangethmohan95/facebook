@@ -10,11 +10,12 @@ class RegisterService extends  CI_Controller
            $user['s_name']=$this->input->get_post("s_name");
            $user['email_id']=$this->input->get_post("email_id");
            $user['password']=$this->input->get_post("password");
-           $user['day']=$this->input->get_post("day");
+           $user['date']=$this->input->get_post("date");
            $user['month']=$this->input->get_post("month"); 
            $user['year']=$this->input->get_post("year");
            $user['gender']=$this->input->get_post("gender");
            $user['prfpic']=$this->input->get_post("prfpic");
+           
            //$user['ml']= $this->input->get_post("ml");
        
            $yr=date("Y");
@@ -97,7 +98,8 @@ public function mailsnd($email,$hash)
                  
                  
                 $this->email->subject('Registration Verification: Continuous Imapression');
-                $msg = "click on yhe link to activaTE UR acccount  <p><a href='http://localhost/login/index.php/RegisterService/verify?email_id=$email&hash=$hash';">click here</a></p>                
+                $msg =  $msg = " <p> <a href='http://localhost/login/index.php/RegisterService/verify?email_id=$email&hash=$hash'>click here to active ur account</a></p>";     
+                           
             $this->email->message($msg);   
            // $this->email->message($this->load->view('email/'.$type.'-html', $data, TRUE));
 
